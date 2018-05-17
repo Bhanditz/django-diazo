@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '2.1.0'
+VERSION = '2.1.1'
 
 REQUIREMENTS = (
     'setuptools>=0.6c11',
@@ -8,7 +8,6 @@ REQUIREMENTS = (
     'diazo>=1.0',
     'webob==1.2.3',
     'repoze.xmliter>=0.3',
-    'django-admin-sortable2>=0.3.1',
 )
 TEST_REQUIREMENTS = (
 )

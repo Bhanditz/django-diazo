@@ -1,6 +1,5 @@
 import os
 import zipfile
-from adminsortable2.admin import SortableAdminMixin
 from django import forms
 from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
@@ -37,7 +36,7 @@ class UserAgentInline(admin.TabularInline):
     extra = 1
 
 
-class ThemeAdmin(SortableAdminMixin, admin.ModelAdmin):
+class ThemeAdmin(admin.ModelAdmin):
     inlines = [UserAgentInline]
     list_display = ('name', 'enabled', 'pattern', 'debug',)
     list_editable = ('enabled', 'pattern', 'debug',)

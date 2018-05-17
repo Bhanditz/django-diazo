@@ -60,12 +60,6 @@ add the following lines to your `wsgi.py` file:
 
 ### Database (migrations)
 
-Add the following to your settings (Django >= 1.7):
-
-    MIGRATION_MODULES = {
-        'django_diazo': 'django_diazo.migrations_django',
-    }
-
 Migrate the database:
 
     python manage.py migrate django_diazo

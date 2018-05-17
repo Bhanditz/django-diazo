@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
-VERSION = '2.0.2'
+VERSION = '2.1.0'
 
 REQUIREMENTS = (
     'setuptools>=0.6c11',
-    'django>=1.4.2',
+    'django>=1.7',
     'diazo>=1.0',
     'webob==1.2.3',
     'repoze.xmliter>=0.3',

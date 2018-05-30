@@ -62,6 +62,7 @@ class DiazoMiddlewareWrapper(object):
                         rules=rules_file,
                         prefix=theme.theme_url(),
                         doctype=DOCTYPE,
+                        read_network=True  # BCW allow network access for remote theme
                     )
                 try:
                     return self.diazo(environ, start_response)

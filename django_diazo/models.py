@@ -66,7 +66,10 @@ class Theme(models.Model):
 
     def theme_url(self):
         if self.builtin:
-            return self.url
+            # return self.url
+            # this is to support Studio and LMS concurrent use of single theme
+            # so lms syncthemes doesn't set 
+            return '/'.join([settings.STATIC_URL, self.slug, self.prefix])
         else:
             return '/'.join([
                 format(settings.MEDIA_URL) + 'themes', str(self.pk),
